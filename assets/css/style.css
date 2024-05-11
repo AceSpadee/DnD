@@ -1,3 +1,28 @@
-.C {
-    color: green;
+:root {
+    --darkred: #b40000ee;
+}
+
+/* body {
+    background-color: black;
+    color: white;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--darkred);
+}
+
+.Picture {
+    justify-content: center;
+}
+
+.Picture > div a {
+    color: teal;
+} 
+
+.Picture div {
+    border: 4px solid darkblue;
+    display: inline;
+    text-wrap: wrap;
+    padding: 5px;
+    margin: 10px;
 }
