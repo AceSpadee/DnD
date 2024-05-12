@@ -2,6 +2,9 @@
     --darkred: #b40000ee;
 }
 
+/* add in bootstrap col 12 method (grid system) in bootstrap after fixing the issues
+https://getbootstrap.com/docs/4.0/layout/grid/  */
+
 body {
     margin: 0;
     padding: 0;
@@ -55,12 +58,18 @@ h1 {
 }
 
 img {
+    /* have the images change size when the webpage changes size and keep them with current declared size*/
     width: 400px;
-    height: 300px
+    height: 300px;
+    max-width: 100%
 }
 
 .Picture {
-    justify-content: center;
+    /* fix the images not being on the screen
+    also display flex is the cause */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* center vertically*/
 }
 
 .Picture > div a {
@@ -68,6 +77,8 @@ img {
 } 
 
         /* this picture div is using inline-block to add a block around the image and setting a transparent color with box shadowing */
+
+        /* change display to flex and then fix the padding and margin */
 .Picture div {
     border: 4px solid transparent;
     box-shadow: 0 0 8px rgba(0,0,0,0.5);
