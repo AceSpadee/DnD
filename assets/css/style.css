@@ -2,13 +2,61 @@
     --darkred: #b40000ee;
 }
 
-/* body {
-    background-color: black;
-    color: white;
-} */
+body {
+    margin: 0;
+    padding: 0;
+}
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--darkred);
+}
+
+        /* this will probably need to change in the future */
+        /* match the padding with the elements stored inside so they are inline */
+/* h2 {
+    padding-left: 20px;
+} */
+
+.navbarstyle {
+    background-color: var(--darkred);
+    height: 25px; /* this could change later to make it fit better */
+}
+
+.navbar {
+    float: right;
+    padding-right: 15px;
+    margin: 5px;
+    font-size: large;
+}
+
+.navbar a {
+    color: blue;
+    text-decoration: none;
+    padding: 10px,
+}
+
+.navbar a:hover {
+    color: #ffe;   /* optional: Light color on hover for better interaction feedback */
+    text-decoration: underline;   /* Optional: Underlines the link on hover  */
+    cursor: pointer;
+}
+
+.Heading {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.Characterlist {
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 300px
 }
 
 .Picture {
@@ -19,10 +67,58 @@ h1, h2, h3, h4, h5, h6 {
     color: teal;
 } 
 
+        /* this picture div is using inline-block to add a block around the image and setting a transparent color with box shadowing */
 .Picture div {
-    border: 4px solid darkblue;
-    display: inline;
+    border: 4px solid transparent;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    display: inline-block;
     text-wrap: wrap;
     padding: 5px;
     margin: 10px;
 }
+
+#Getstarted {
+    background-color: #04AA6D;
+    border: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#Getstarted:hover {
+    background-color: lightsalmon;
+    cursor: pointer;
+}
+
+.Futurebuild {
+    border: 4px solid black;
+    max-width: 800px;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.Futurebuild ul {
+    padding-left: 0;         /* Removes default padding */
+    margin: 0 auto;          /* Centers the ul in the grid area */
+    width: fit-content;      /* Restrict width to the content size */
+    padding-bottom: 10px;
+}
+
+.Futurebuild li {
+    text-align: left;        /* Aligns the text to the left within the centered ul */
+} 
+
+.Characterbuild {
+    border: 4px solid black;
+    max-width: 800px;
+    margin: 10px auto 10px auto;
+    padding-bottom: 10px;
+    text-align: center;
+    display: grid;
+}
+

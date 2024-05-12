@@ -8,40 +8,86 @@
     </head>
 
     <body>
-        <header>
-            <h1>DND Usefullness</h1>
-            <p>making a website with dnd</p>
+        <!-- create a navbar with character dropdown menu. add a link to future builds. add a lightmode, darkmode. -->
+        <!-- change the navbar to be on the right side of the screen-->
+        <!-- add a container element to have a header backgrouond for navbar to stand out-->
+        <!-- onmousemover() to add a hover element for links-->
+        <!-- change link color-->
+        <!-- find out how to select the class and its child elements-->
+        <header class="navbarstyle">
+            <nav class="navbar">
+                <a href="#">Character dropdown</a> |
+                <a href="./assets/html/Character-creation.html">Character Creation</a> |
+                <a href="#">Future builds</a> |
+                <a href="#">Theme</a> 
+             </nav>
         </header>
 
-        <section>
+        <section class="Heading">
+            <h1>DND webpage</h1>
+            <p>this is a placeholder paragraph to see how it looks</p>
+        </section>
+
+        <section class="Characterlist">
             <h2>DND Characters</h2>
         </section>
 
+        <!-- change the empty img tag to a picture of the character creation-->
+        <!-- add in a placeholder image to see what it looks like-->
+        <!-- add in text underneath the image and have them grouped in the section-->
         <section class="Picture">
             <div>
-                <a href="./assets/html/Al-beback.html">                   
-                    <img src="#" alt="Al-beback" width="500" height="600">
+                <a href="./assets/html/Al-beback.html">               
+                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5qsP1Cndcqpe7nqn5AOeD6/ebecd02eded46f79054c14808f8a22f1/ezio_collection_ncsa-pagemeta-key-art.jpg" alt="Al-beback">
                 </a>
             </div>
 
             <div>
                 <a href="./assets/html/Amon-gus.html">
-                    <img src="#" alt="Amon-gus" width="500" height="600">
+                <img src="https://static.wikia.nocookie.net/forgottenrealms/images/2/29/GiantPorcupine-1e.png/revision/latest?cb=20200827202404" alt="Amon-gus">
                 </a>
             </div>
 
             <div>
                 <a href="./assets/html/Justin-time.html">
-                    <img src="#" alt="Justin-time" width="500" height="600">
+                <img src="https://qph.cf2.quoracdn.net/main-qimg-86eab9029a4901c485ad8f092004d3fd" alt="Justin-time">
                 </a>
             </div>
 
             <div>
                 <a href="./assets/html/Paladin1.html">
-                    <img src="#" alt="Paladin1" width="500" height="600">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/024/057/136/small_2x/ascension-day-of-jesus-christ-or-resurrection-day-of-son-of-god-good-friday-ascension-day-concept-by-ai-generated-free-photo.jpg" alt="Paladin1">
                 </a>
             </div>
         </section>
+
+        <!-- this section will have the unfinished designs for character builds and different ideas for new characters-->
+        <!-- create a flexbox for only this section with a title header of future builds-->
+        <!-- needs to be centered with a border around the entire element-->
+        <section class="Futurebuild">
+            <h2>Future builds</h2>
+                <ul>
+                    <li>placeholder</li>
+                    <li>placeholder</li>
+                </ul>
+        </section>
+
+
+        <!-- add a start button that will lead to a character creation file. -->
+        <!-- create a back button, a submit button, and a unfinished button
+            (the back button will lead to the home page) 
+            (the submit button will add it into the character)
+            (the unfinished button will add it into the future builds element)-->
+        <!-- needs to be centered with a border around the entire element-->
+        <section class="Characterbuild">
+            <h2>Character builds</h2>
+            <a href="./assets/html/Character-creation.html">
+            <button type="button" id="Getstarted">create character</button>
+            </a>
+        </section>
+
+        <!-- this is here for testing at the moment-->
+        <script src="./assets/js/script.js"></script>
 
     </body>
 
