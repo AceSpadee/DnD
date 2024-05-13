@@ -26,30 +26,11 @@ h2 {
     font-size: 30px;
 }
 
-/* selecting the class navbarstyle and setting the background color and height of background color */
-.navbarstyle {
-    background-color: var(--darkred);
-    height: 25px; /* this could change later to make it fit better */
-}
-
-.navbar {
-    float: right;
-    padding-right: 15px;
-    margin: 5px;
-    font-size: large;
-}
-
-.navbar a {
-    color: blue;
-    text-decoration: none;
-    padding: 10px,
-}
-
-.navbar a:hover {
-    color: #ffe;   /* optional: Light color on hover for better interaction feedback */
-    text-decoration: underline;   /* Optional: Underlines the link on hover  */
+/* .navbar a:hover {
+    color: #ffe;
+    text-decoration: underline;
     cursor: pointer;
-}
+} */
 
 .Heading {
     text-align: center;
@@ -91,6 +72,7 @@ the padding or margin is not auto changing with the picture to remain the same  
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* center vertically*/
+    text-align: center;
 }
 
         /* this picture div is using inline-block to add a block around the image and setting a transparent color with box shadowing */
@@ -108,6 +90,11 @@ the padding or margin is not auto changing with the picture to remain the same  
 .Picture > div a {
     color: teal;
 } 
+
+.Picture > div img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container width */
+    height: auto; /* Maintain the aspect ratio */
+}
 
 /* implement a media query that changes the fontsize when page shrinks */
 .Picture > div p {
