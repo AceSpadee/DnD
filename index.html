@@ -4,24 +4,71 @@
     <head>
         <meta charset="UTF-8">
         <title>DND webpage</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 
+
+    <!-- add in jquery for better implementation -->
+    <!-- add in jquery ui for better implementation -->
+    <!-- add in bootstrap for better implementation -->
     <body>
         <!-- create a navbar with character dropdown menu. add a link to future builds. add a lightmode, darkmode. -->
-        <!-- change the navbar to be on the right side of the screen-->
-        <!-- add a container element to have a header backgrouond for navbar to stand out-->
-        <!-- onmousemover() to add a hover element for links-->
-        <!-- change link color-->
         <!-- find out how to select the class and its child elements-->
+        <!-- create a navbar and implement a better version with jquery api-->
+                <!-- creating a dropdown list https://jqueryui.com/selectmenu/ -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
         <header class="navbarstyle">
-            <nav class="navbar">
-                <a href="#">Character dropdown</a> |
+            <!-- <nav class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">Character dropdown</button>
+                    <div class="dropdown-content">
+                        <a href="./assets/html/Al-beback.html">Al-beback</a>
+                        <a href="./assets/html/Amon-gus.html">Amon gus</a>
+                        <a href="./assets/html/Justin-time.html">Justin time</a>
+                        <a href="./assets/html/Paladin1.html">Paladin1</a>
+                        <a href="./assets/html/Porky-pine.html">Porky pine</a>
+                    </div>
+                </div>
+                <a href="#">Character dropdown</a>
                 <a href="./assets/html/Character-creation.html">Character Creation</a> |
-                <a href="#">Future builds</a> |
+                <a href="./assets/html/Futurebuids.html">Future builds</a> |
                 <a href="#">Theme</a> 
-             </nav>
+             </nav> -->
+
+    <!-- figure out what does what and change the elements inside to match what is created above -->
+             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
         </header>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
 
         <section class="Heading">
             <h1>DND webpage</h1>
@@ -40,6 +87,7 @@
                 <a href="./assets/html/Al-beback.html">               
                 <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5qsP1Cndcqpe7nqn5AOeD6/ebecd02eded46f79054c14808f8a22f1/ezio_collection_ncsa-pagemeta-key-art.jpg" alt="Al-beback">
                 </a>
+                <p>Al beback. rogue character level 6</p>
             </div>
 
             <div>

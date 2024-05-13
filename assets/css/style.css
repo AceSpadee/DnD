@@ -8,18 +8,25 @@ https://getbootstrap.com/docs/4.0/layout/grid/  */
 body {
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
 
+/* changes all the heading tags to have the text color of darkred */
 h1, h2, h3, h4, h5, h6 {
     color: var(--darkred);
 }
 
-        /* this will probably need to change in the future */
-        /* match the padding with the elements stored inside so they are inline */
-/* h2 {
-    padding-left: 20px;
-} */
+/* changes all h1 tags to have a fontsize of 40px */
+h1 {
+    font-size: 40px;
+}
 
+/* changes all h2 tags to have a fontsize of 30px */
+h2 {
+    font-size: 30px;
+}
+
+/* selecting the class navbarstyle and setting the background color and height of background color */
 .navbarstyle {
     background-color: var(--darkred);
     height: 25px; /* this could change later to make it fit better */
@@ -57,37 +64,57 @@ h1 {
     text-align: center;
 }
 
-img {
-    /* have the images change size when the webpage changes size and keep them with current declared size*/
-    width: 400px;
-    height: 300px;
-    max-width: 100%
+section div img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
 }
 
-.Picture {
-    /* fix the images not being on the screen
+
+ /* if image sizes are not the same. then set all images to be the same size after adding in bootstrap */
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the container */
+    overflow: hidden;  /* Prevents any overflow from the image */
+    position: relative; /* Necessary if you're positioning elements inside */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 2); /* Example shadow */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------
+the padding or margin is not auto changing with the picture to remain the same  */
+   /* fix the images not being on the screen
     also display flex is the cause */
+    /* create a media query for class picture containing its div,a, and p tags */
+.Picture {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* center vertically*/
 }
 
-.Picture > div a {
-    color: teal;
-} 
-
         /* this picture div is using inline-block to add a block around the image and setting a transparent color with box shadowing */
 
         /* change display to flex and then fix the padding and margin */
 .Picture div {
-    border: 4px solid transparent;
-    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    /* border: 4px solid transparent;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5); */
     display: inline-block;
     text-wrap: wrap;
     padding: 5px;
     margin: 10px;
 }
 
+.Picture > div a {
+    color: teal;
+} 
+
+/* implement a media query that changes the fontsize when page shrinks */
+.Picture > div p {
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
 #Getstarted {
     background-color: #04AA6D;
     border: black;
@@ -103,6 +130,8 @@ img {
     background-color: lightsalmon;
     cursor: pointer;
 }
+
+/* future build section border needs to change with the resizing of webpage */
 
 .Futurebuild {
     border: 4px solid black;
@@ -123,6 +152,8 @@ img {
 .Futurebuild li {
     text-align: left;        /* Aligns the text to the left within the centered ul */
 } 
+
+/* character build section border needs to change with the resizing of webpage */
 
 .Characterbuild {
     border: 4px solid black;
