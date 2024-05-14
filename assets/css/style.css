@@ -8,7 +8,106 @@ https://getbootstrap.com/docs/4.0/layout/grid/  */
 body {
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    /* font-size: 20px; */
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* fonts for title */
+@media screen and (min-width: 1025px) {
+    .FontsTitle {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .FontsTitle {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .FontsTitle {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .FontsTitle {
+        font-size: 16px;
+    }
+}
+/* -------------------------------------------------------------------------------------------------- */
+/* Fonts for smaller text */
+@media screen and (min-width: 1025px) {
+    .FontsP {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .FontsP {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .FontsP {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .FontsP {
+        font-size: 10px;
+    }
+}
+/* --------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 1025px) {
+    .FontsH2 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .FontsH2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .FontsH2 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .FontsH2 {
+        font-size: 11px;
+    }
+}
+/* ---------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 1025px) {
+    .Fontspic {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Fontspic {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Fontspic {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Fontspic {
+        font-size: 12px;
+    }
 }
 
 /* changes all the heading tags to have the text color of darkred */
@@ -17,14 +116,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* changes all h1 tags to have a fontsize of 40px */
-h1 {
+/* h1 {
     font-size: 40px;
-}
+} */
 
 /* changes all h2 tags to have a fontsize of 30px */
-h2 {
+/* h2 {
     font-size: 30px;
-}
+} */
 
 /* .navbar a:hover {
     color: #ffe;
