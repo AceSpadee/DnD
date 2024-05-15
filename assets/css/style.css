@@ -115,21 +115,9 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--darkred);
 }
 
-/* changes all h1 tags to have a fontsize of 40px */
-/* h1 {
-    font-size: 40px;
-} */
-
-/* changes all h2 tags to have a fontsize of 30px */
-/* h2 {
-    font-size: 30px;
-} */
-
-/* .navbar a:hover {
-    color: #ffe;
+.link:hover {
     text-decoration: underline;
-    cursor: pointer;
-} */
+}
 
 .Heading {
     text-align: center;
